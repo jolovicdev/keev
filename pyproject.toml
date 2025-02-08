@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "keev"
+version = "0.1.0"
+description = "A minimal yet ultrafast ASGI framework"
+authors = [
+    { name="Dušan Jolović", email="jolovic@pm.me" }
+]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "uvicorn",
+    "uvloop",
+    "aiofiles",
+    "python-multipart",
+    "orjson",
+    "sqlalchemy>=2.0.0",
+    "pydantic>=2.0.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-asyncio",
+    "httpx"
+]
+test = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+    "pytest-cov>=4.1.0",
+    "httpx>=0.24.0"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --cov=keev --cov-report=term-missing"

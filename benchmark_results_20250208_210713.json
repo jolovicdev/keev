@@ -1,0 +1,188 @@
+{
+  "Keev": {
+    "Concurrency_10": {
+      "GET /benchmark | concurrency=10": {
+        "requests": 98005,
+        "errors": 0,
+        "avg_ms": 1.78,
+        "median_ms": 1.73,
+        "min_ms": 1.02,
+        "max_ms": 12.5,
+        "std_dev_ms": 0.22,
+        "rps": 6533.06,
+        "success_rate_%": 100.0,
+        "status_codes": {
+          "200": 98005
+        }
+      },
+      "POST /benchmark | concurrency=10": {
+        "requests": 65246,
+        "errors": 0,
+        "avg_ms": 2.29,
+        "median_ms": 2.24,
+        "min_ms": 1.16,
+        "max_ms": 4.78,
+        "std_dev_ms": 0.18,
+        "rps": 4349.31,
+        "success_rate_%": 100.0,
+        "status_codes": {
+          "200": 65246
+        }
+      }
+    },
+    "Concurrency_50": {
+      "GET /benchmark | concurrency=50": {
+        "requests": 109197,
+        "errors": 0,
+        "avg_ms": 8.0,
+        "median_ms": 7.84,
+        "min_ms": 3.57,
+        "max_ms": 83.13,
+        "std_dev_ms": 1.05,
+        "rps": 7277.64,
+        "success_rate_%": 100.0,
+        "status_codes": {
+          "200": 109197
+        }
+      },
+      "POST /benchmark | concurrency=50": {
+        "requests": 69392,
+        "errors": 0,
+        "avg_ms": 10.8,
+        "median_ms": 10.61,
+        "min_ms": 4.6,
+        "max_ms": 27.43,
+        "std_dev_ms": 0.88,
+        "rps": 4623.93,
+        "success_rate_%": 100.0,
+        "status_codes": {
+          "200": 69392
+        }
+      }
+    }
+  },
+  "FastAPI": {
+    "Concurrency_10": {
+      "GET /benchmark | concurrency=10": {
+        "requests": 81285,
+        "errors": 0,
+        "avg_ms": 2.14,
+        "median_ms": 2.08,
+        "min_ms": 0.69,
+        "max_ms": 14.2,
+        "std_dev_ms": 0.25,
+        "rps": 5418.38,
+        "success_rate_%": 100.0,
+        "status_codes": {
+          "200": 81285
+        }
+      },
+      "POST /benchmark | concurrency=10": {
+        "requests": 45765,
+        "errors": 0,
+        "avg_ms": 3.27,
+        "median_ms": 3.05,
+        "min_ms": 1.14,
+        "max_ms": 11.44,
+        "std_dev_ms": 0.66,
+        "rps": 3050.53,
+        "success_rate_%": 100.0,
+        "status_codes": {
+          "200": 45765
+        }
+      }
+    },
+    "Concurrency_50": {
+      "GET /benchmark | concurrency=50": {
+        "requests": 87633,
+        "errors": 0,
+        "avg_ms": 9.97,
+        "median_ms": 9.71,
+        "min_ms": 5.38,
+        "max_ms": 112.53,
+        "std_dev_ms": 1.5,
+        "rps": 5839.75,
+        "success_rate_%": 100.0,
+        "status_codes": {
+          "200": 87633
+        }
+      },
+      "POST /benchmark | concurrency=50": {
+        "requests": 50827,
+        "errors": 0,
+        "avg_ms": 14.75,
+        "median_ms": 14.45,
+        "min_ms": 6.11,
+        "max_ms": 48.82,
+        "std_dev_ms": 1.51,
+        "rps": 3385.88,
+        "success_rate_%": 100.0,
+        "status_codes": {
+          "200": 50827
+        }
+      }
+    }
+  },
+  "Flask": {
+    "Concurrency_10": {
+      "GET /benchmark | concurrency=10": {
+        "requests": 12232,
+        "errors": 0,
+        "avg_ms": 14.28,
+        "median_ms": 14.11,
+        "min_ms": 7.95,
+        "max_ms": 49.99,
+        "std_dev_ms": 1.69,
+        "rps": 814.83,
+        "success_rate_%": 100.0,
+        "status_codes": {
+          "200": 12232
+        }
+      },
+      "POST /benchmark | concurrency=10": {
+        "requests": 9985,
+        "errors": 0,
+        "avg_ms": 15.01,
+        "median_ms": 14.88,
+        "min_ms": 4.65,
+        "max_ms": 29.26,
+        "std_dev_ms": 1.43,
+        "rps": 665.03,
+        "success_rate_%": 100.0,
+        "status_codes": {
+          "200": 9985
+        }
+      }
+    },
+    "Concurrency_50": {
+      "GET /benchmark | concurrency=50": {
+        "requests": 12198,
+        "errors": 0,
+        "avg_ms": 71.76,
+        "median_ms": 70.73,
+        "min_ms": 17.89,
+        "max_ms": 115.49,
+        "std_dev_ms": 5.46,
+        "rps": 809.5,
+        "success_rate_%": 100.0,
+        "status_codes": {
+          "200": 12198
+        }
+      },
+      "POST /benchmark | concurrency=50": {
+        "requests": 9988,
+        "errors": 0,
+        "avg_ms": 75.23,
+        "median_ms": 74.73,
+        "min_ms": 22.66,
+        "max_ms": 111.28,
+        "std_dev_ms": 3.81,
+        "rps": 662.67,
+        "success_rate_%": 100.0,
+        "status_codes": {
+          "200": 9988
+        }
+      }
+    }
+  }
+}
