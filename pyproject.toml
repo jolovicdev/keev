@@ -4,12 +4,12 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "keev"
-repository = "jolovicdev/keev"
 version = "0.1.1"
 description = "A minimal yet ultrafast ASGI framework"
 authors = [
     { name="Dušan Jolović", email="jolovic@pm.me" }
 ]
+urls = { repository = "https://github.com/jolovicdev/keev" }
 readme = "README.md"
 requires-python = ">=3.8"
 dependencies = [
