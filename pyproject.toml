@@ -4,6 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "keev"
+repository = "jolovicdev/keev"
 version = "0.1.0"
 description = "A minimal yet ultrafast ASGI framework"
 authors = [

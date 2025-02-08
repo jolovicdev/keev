@@ -13,6 +13,7 @@ lib/
 lib64/
 __pycache__
 testvenv/
+publish.py
 parts/
 sdist/
 var/
